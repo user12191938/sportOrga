@@ -1,49 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> SportOrga.com | <%= @title %></title>
+		<title>   title | <%= @title %></title>
 		<%= csrf_meta_tag %>
-		<!--<link rel="stylesheet" type="text/css" href="../../assets/stylesheets/application.css">-->
-		<style>
-#header{
-	position:absolute;
-	top:10;
-	left:10;
-	width:790;
-	height:90;
-	background-color:#FFFF77
-}
-#sidebar{
-	position:absolute;
-	top:110;
-	left:10;
-	width:25;
-	height:300;
-	background-color:#FFFF99
-}
-#footer{
-	position:absolute;
-	top:420;
-	left:10;
-	width:790;
-	height:90;
-	background-color:#000000
-}
-
-
-		</style>
+		<%= stylesheet_link_tag 'standard' %>
+		<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+		<%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
 	</head>
 	<body>
 		<div id="header">
-			
+
 		</div>
 		<div id="sidebar">
-			
+
 		</div>
 		<%= yield %>
 		<div id="footer">
-			
+
 		</div>
-		
+
 	</body>
 </html>

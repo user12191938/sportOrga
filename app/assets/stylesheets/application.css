@@ -11,28 +11,5 @@
  *= require_self
  *= require_tree .
  */
-#header{
-	position:absolute;
-	top:10;
-	left:10;
-	width:790;
-	height:90;
-	background-color:#FFFF77
-}
-#sidebar{
-	position:absolute;
-	top:110;
-	left:10;
-	width:25;
-	height:300;
-	background-color:#FFFF99
-}
-#footer{
-	position:absolute;
-	top:420;
-	left:10;
-	width:790;
-	height:90;
-	background-color:#000000
-}
+
 
