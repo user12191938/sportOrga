@@ -1,9 +1,35 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+  imagePath: MyString
   name: MyString
+  surname: MyString
+  nickname: MyString
+  age: 1
+  password: MyString
   email: MyString
+  description: MyText
+  address: MyString
+  plz: 1
+  city: MyString
+  sportTypes: MyText
+  officeHours: MyText
+  trainingPlan: MyString
+  nutritionPlan: MyString
 
 two:
+  imagePath: MyString
   name: MyString
+  surname: MyString
+  nickname: MyString
+  age: 1
+  password: MyString
   email: MyString
+  description: MyText
+  address: MyString
+  plz: 1
+  city: MyString
+  sportTypes: MyText
+  officeHours: MyText
+  trainingPlan: MyString
+  nutritionPlan: MyString

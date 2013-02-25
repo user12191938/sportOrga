@@ -1,18 +1,9 @@
 <p id="notice"><%= notice %></p>
-<table class="profile" summary="Profile Information">
-	<tr>
-		<td class="main">
-			<h1>
-				<%= gravatar_for @user %>
-				<%= @user.name %>
-			</h1>
-		</td>
-		<td class="sidebar round">
-			<strong>Name</strong> <%= @user.name %><br />
-			<strong>URL</strong> <%= link_to user_path(@user), @user %>
-		</td>
-	</tr>
-</table>
+
+<p>
+  <b>Imagepath:</b>
+  <%= @user.imagePath %>
+</p>
 
 <p>
   <b>Name:</b>
@@ -20,8 +11,68 @@
 </p>
 
 <p>
+  <b>Surname:</b>
+  <%= @user.surname %>
+</p>
+
+<p>
+  <b>Nickname:</b>
+  <%= @user.nickname %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @user.age %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @user.password %>
+</p>
+
+<p>
   <b>Email:</b>
   <%= @user.email %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @user.description %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @user.address %>
+</p>
+
+<p>
+  <b>Plz:</b>
+  <%= @user.plz %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @user.city %>
+</p>
+
+<p>
+  <b>Sporttypes:</b>
+  <%= @user.sportTypes %>
+</p>
+
+<p>
+  <b>Officehours:</b>
+  <%= @user.officeHours %>
+</p>
+
+<p>
+  <b>Trainingplan:</b>
+  <%= @user.trainingPlan %>
+</p>
+
+<p>
+  <b>nutritionPlan:</b>
+  <%= @user.nutritionPlan %>
 </p>
 
 

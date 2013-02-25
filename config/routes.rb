@@ -1,5 +1,29 @@
 SportOrga::Application.routes.draw do
 
+  resources :sport_clubs
+
+
+  resources :ad_contacts
+
+
+  resources :ad_schedules
+
+
+  resources :ad_spaces
+
+
+  resources :users
+
+
+  resources :sport_trainers
+
+
+  resources :sport_doctors
+
+
+  resources :sport_facilities
+
+
   match '/contact', :to => 'pages#contact'
   match '/about', :to => 'pages#about'
   match '/help', :to => 'pages#help'

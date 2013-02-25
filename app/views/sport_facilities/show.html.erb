@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Imagepath:</b>
+  <%= @sport_facility.imagePath %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @sport_facility.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @sport_facility.description %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @sport_facility.address %>
+</p>
+
+<p>
+  <b>Plz:</b>
+  <%= @sport_facility.plz %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @sport_facility.city %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @sport_facility.price %>
+</p>
+
+<p>
+  <b>Openinghours:</b>
+  <%= @sport_facility.openingHours %>
+</p>
+
+<p>
+  <b>Sporttypes:</b>
+  <%= @sport_facility.sportTypes %>
+</p>
+
+<p>
+  <b>Events:</b>
+  <%= @sport_facility.events %>
+</p>
+
+
+<%= link_to 'Edit', edit_sport_facility_path(@sport_facility) %> |
+<%= link_to 'Back', sport_facilities_path %>

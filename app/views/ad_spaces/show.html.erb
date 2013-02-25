@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Adschedule:</b>
+  <%= @ad_space.adSchedule %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%= @ad_space.contact %>
+</p>
+
+<p>
+  <b>Subjectarea:</b>
+  <%= @ad_space.subjectArea %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @ad_space.price %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @ad_space.size %>
+</p>
+
+
+<%= link_to 'Edit', edit_ad_space_path(@ad_space) %> |
+<%= link_to 'Back', ad_spaces_path %>

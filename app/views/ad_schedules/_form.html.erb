@@ -1,0 +1,53 @@
+<%= form_for(@ad_schedule) do |f| %>
+  <% if @ad_schedule.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ad_schedule.errors.count, "error") %> prohibited this ad_schedule from being saved:</h2>
+
+      <ul>
+      <% @ad_schedule.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :imagePath %><br />
+    <%= f.text_field :imagePath %>
+  </div>
+  <div class="field">
+    <%= f.label :company %><br />
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :contact %><br />
+    <%= f.text_field :contact %>
+  </div>
+  <div class="field">
+    <%= f.label :subjectArea %><br />
+    <%= f.text_field :subjectArea %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br />
+    <%= f.number_field :duration %>
+  </div>
+  <div class="field">
+    <%= f.label :size %><br />
+    <%= f.text_field :size %>
+  </div>
+  <div class="field">
+    <%= f.label :timeShift %><br />
+    <%= f.number_field :timeShift %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

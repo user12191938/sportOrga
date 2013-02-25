@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  imagePath: MyString
+  name: MyString
+  description: MyText
+  address: MyString
+  plz: 1
+  city: MyString
+  price: 1.5
+  openingHours: MyText
+  sportTypes: MyText
+  events: MyText
+
+two:
+  imagePath: MyString
+  name: MyString
+  description: MyText
+  address: MyString
+  plz: 1
+  city: MyString
+  price: 1.5
+  openingHours: MyText
+  sportTypes: MyText
+  events: MyText

@@ -1,0 +1,41 @@
+<h1>Listing sport_facilities</h1>
+
+<table>
+  <tr>
+    <th>Imagepath</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Address</th>
+    <th>Plz</th>
+    <th>City</th>
+    <th>Price</th>
+    <th>Openinghours</th>
+    <th>Sporttypes</th>
+    <th>Events</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sport_facilities.each do |sport_facility| %>
+  <tr>
+    <td><%= sport_facility.imagePath %></td>
+    <td><%= sport_facility.name %></td>
+    <td><%= sport_facility.description %></td>
+    <td><%= sport_facility.address %></td>
+    <td><%= sport_facility.plz %></td>
+    <td><%= sport_facility.city %></td>
+    <td><%= sport_facility.price %></td>
+    <td><%= sport_facility.openingHours %></td>
+    <td><%= sport_facility.sportTypes %></td>
+    <td><%= sport_facility.events %></td>
+    <td><%= link_to 'Show', sport_facility %></td>
+    <td><%= link_to 'Edit', edit_sport_facility_path(sport_facility) %></td>
+    <td><%= link_to 'Destroy', sport_facility, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sport facility', new_sport_facility_path %>

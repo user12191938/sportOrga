@@ -1,0 +1,39 @@
+<h1>Listing ad_schedules</h1>
+
+<table>
+  <tr>
+    <th>Imagepath</th>
+    <th>Company</th>
+    <th>Description</th>
+    <th>Contact</th>
+    <th>Subjectarea</th>
+    <th>Price</th>
+    <th>Duration</th>
+    <th>Size</th>
+    <th>Timeshift</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ad_schedules.each do |ad_schedule| %>
+  <tr>
+    <td><%= ad_schedule.imagePath %></td>
+    <td><%= ad_schedule.company %></td>
+    <td><%= ad_schedule.description %></td>
+    <td><%= ad_schedule.contact %></td>
+    <td><%= ad_schedule.subjectArea %></td>
+    <td><%= ad_schedule.price %></td>
+    <td><%= ad_schedule.duration %></td>
+    <td><%= ad_schedule.size %></td>
+    <td><%= ad_schedule.timeShift %></td>
+    <td><%= link_to 'Show', ad_schedule %></td>
+    <td><%= link_to 'Edit', edit_ad_schedule_path(ad_schedule) %></td>
+    <td><%= link_to 'Destroy', ad_schedule, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ad schedule', new_ad_schedule_path %>

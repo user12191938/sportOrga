@@ -11,23 +11,132 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130213143755) do
+ActiveRecord::Schema.define(:version => 20130220162145) do
 
-  create_table "microposts", :force => true do |t|
-    t.string   "content"
-    t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+  create_table "ad_contacts", :force => true do |t|
+    t.string   "adSchedule"
+    t.string   "company"
+    t.text     "description"
+    t.string   "name"
+    t.string   "surname"
+    t.string   "position"
+    t.string   "email"
+    t.string   "phone"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "ad_schedules", :force => true do |t|
+    t.string   "imagePath"
+    t.string   "company"
+    t.text     "description"
+    t.string   "contact"
+    t.string   "subjectArea"
+    t.float    "price"
+    t.integer  "duration"
+    t.float    "size"
+    t.integer  "timeShift"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "ad_spaces", :force => true do |t|
+    t.string   "adSchedule"
+    t.string   "contact"
+    t.string   "subjectArea"
+    t.float    "price"
+    t.float    "size"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "sport_clubs", :force => true do |t|
+    t.string   "imagePath"
+    t.string   "name"
+    t.text     "description"
+    t.string   "address"
+    t.integer  "plz"
+    t.string   "city"
+    t.float    "price"
+    t.text     "sportTypes"
+    t.string   "sportFacility"
+    t.text     "trainingHours"
+    t.text     "news"
+    t.string   "table"
+    t.string   "matchSchedule"
+    t.string   "website"
+    t.string   "squad"
+    t.string   "youthSquads"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "sport_doctors", :force => true do |t|
+    t.string   "imagePath"
+    t.string   "name"
+    t.string   "surname"
+    t.text     "description"
+    t.string   "address"
+    t.integer  "plz"
+    t.string   "city"
+    t.float    "price"
+    t.string   "profession"
+    t.string   "subjectArea"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "sport_facilities", :force => true do |t|
+    t.string   "imagePath"
+    t.string   "name"
+    t.text     "description"
+    t.string   "address"
+    t.integer  "plz"
+    t.string   "city"
+    t.float    "price"
+    t.text     "openingHours"
+    t.text     "sportTypes"
+    t.text     "events"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "sport_trainers", :force => true do |t|
+    t.string   "imagePath"
+    t.string   "name"
+    t.string   "surname"
+    t.text     "description"
+    t.string   "address"
+    t.integer  "plz"
+    t.string   "city"
+    t.float    "price"
+    t.text     "officeHours"
+    t.string   "subjectArea"
+    t.text     "focus"
+    t.string   "phone"
+    t.string   "sportFacility"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "users", :force => true do |t|
+    t.string   "imagePath"
     t.string   "name"
+    t.string   "surname"
+    t.string   "nickname"
+    t.integer  "age"
+    t.string   "password"
     t.string   "email"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.string   "salt"
+    t.text     "description"
+    t.string   "address"
+    t.integer  "plz"
+    t.string   "city"
+    t.text     "sportTypes"
+    t.text     "officeHours"
+    t.string   "trainingPlan"
+    t.string   "nutritionPlan"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
-
-  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
 
 end

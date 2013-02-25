@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  adSchedule: MyString
+  contact: MyString
+  subjectArea: MyString
+  price: 1.5
+  size: 1.5
+
+two:
+  adSchedule: MyString
+  contact: MyString
+  subjectArea: MyString
+  price: 1.5
+  size: 1.5

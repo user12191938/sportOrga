@@ -67,6 +67,9 @@ set :application, "rails1"
 # repository location
 set :repository, "git@github.com:user12191938/sportOrga.git"
 
+# branch
+set :branch, fetch(:branch, "login")
+
 # :subversionn or :git
 set :scm, :git
 set :scm_verbose, true

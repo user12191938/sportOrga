@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Imagepath:</b>
+  <%= @ad_schedule.imagePath %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @ad_schedule.company %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @ad_schedule.description %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%= @ad_schedule.contact %>
+</p>
+
+<p>
+  <b>Subjectarea:</b>
+  <%= @ad_schedule.subjectArea %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @ad_schedule.price %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @ad_schedule.duration %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @ad_schedule.size %>
+</p>
+
+<p>
+  <b>Timeshift:</b>
+  <%= @ad_schedule.timeShift %>
+</p>
+
+
+<%= link_to 'Edit', edit_ad_schedule_path(@ad_schedule) %> |
+<%= link_to 'Back', ad_schedules_path %>

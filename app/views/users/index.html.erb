@@ -2,8 +2,21 @@
 
 <table>
   <tr>
+    <th>Imagepath</th>
     <th>Name</th>
+    <th>Surname</th>
+    <th>Nickname</th>
+    <th>Age</th>
+    <th>Password</th>
     <th>Email</th>
+    <th>Description</th>
+    <th>Address</th>
+    <th>Plz</th>
+    <th>City</th>
+    <th>Sporttypes</th>
+    <th>Officehours</th>
+    <th>Trainingplan</th>
+    <th>nutritionPlan</th>
     <th></th>
     <th></th>
     <th></th>
@@ -11,8 +24,21 @@
 
 <% @users.each do |user| %>
   <tr>
+    <td><%= user.imagePath %></td>
     <td><%= user.name %></td>
+    <td><%= user.surname %></td>
+    <td><%= user.nickname %></td>
+    <td><%= user.age %></td>
+    <td><%= user.password %></td>
     <td><%= user.email %></td>
+    <td><%= user.description %></td>
+    <td><%= user.address %></td>
+    <td><%= user.plz %></td>
+    <td><%= user.city %></td>
+    <td><%= user.sportTypes %></td>
+    <td><%= user.officeHours %></td>
+    <td><%= user.trainingPlan %></td>
+    <td><%= user.nutritionPlan %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>

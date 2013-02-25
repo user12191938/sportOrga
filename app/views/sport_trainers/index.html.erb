@@ -1,0 +1,47 @@
+<h1>Listing sport_trainers</h1>
+
+<table>
+  <tr>
+    <th>Imagepath</th>
+    <th>Name</th>
+    <th>Surname</th>
+    <th>Description</th>
+    <th>Address</th>
+    <th>Plz</th>
+    <th>City</th>
+    <th>Price</th>
+    <th>Officehours</th>
+    <th>Subjectarea</th>
+    <th>Focus</th>
+    <th>Phone</th>
+    <th>Sportfacility</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sport_trainers.each do |sport_trainer| %>
+  <tr>
+    <td><%= sport_trainer.imagePath %></td>
+    <td><%= sport_trainer.name %></td>
+    <td><%= sport_trainer.surname %></td>
+    <td><%= sport_trainer.description %></td>
+    <td><%= sport_trainer.address %></td>
+    <td><%= sport_trainer.plz %></td>
+    <td><%= sport_trainer.city %></td>
+    <td><%= sport_trainer.price %></td>
+    <td><%= sport_trainer.officeHours %></td>
+    <td><%= sport_trainer.subjectArea %></td>
+    <td><%= sport_trainer.focus %></td>
+    <td><%= sport_trainer.phone %></td>
+    <td><%= sport_trainer.sportFacility %></td>
+    <td><%= link_to 'Show', sport_trainer %></td>
+    <td><%= link_to 'Edit', edit_sport_trainer_path(sport_trainer) %></td>
+    <td><%= link_to 'Destroy', sport_trainer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sport trainer', new_sport_trainer_path %>

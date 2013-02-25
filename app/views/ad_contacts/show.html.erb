@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Adschedule:</b>
+  <%= @ad_contact.adSchedule %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @ad_contact.company %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @ad_contact.description %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @ad_contact.name %>
+</p>
+
+<p>
+  <b>Surname:</b>
+  <%= @ad_contact.surname %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @ad_contact.position %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @ad_contact.email %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @ad_contact.phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_ad_contact_path(@ad_contact) %> |
+<%= link_to 'Back', ad_contacts_path %>
